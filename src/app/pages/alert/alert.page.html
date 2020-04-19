@@ -1,0 +1,35 @@
+<app-header titulo = "alert page"></app-header>
+
+<ion-content class="ion-padding">
+  
+  <ion-button (click)="presentAlert()" color="primary" expand="full">
+    Present Alert
+  </ion-button>
+
+  <ion-button (click)="presentAlertMultipleButtons()" color="primary" expand="full">
+    Present Alert Multiple Buttons
+  </ion-button>
+
+  <ion-button (click)="presentAlertConfirm()" color="primary" expand="full">
+    Present Alert Confirm
+  </ion-button>
+
+  <ion-button (click)="presentAlertPrompt()" color="primary" expand="full">
+    Present Alert Prompt
+  </ion-button>
+
+  <ion-button (click)="presentAlertRadio()" color="primary" expand="full">
+    Present Alert Radio
+  </ion-button>
+
+  <ion-button (click)="presentAlertCheckbox()" color="primary" expand="full">
+    Present Alert Checkbox
+  </ion-button>
+
+  <ion-button (click)="dataInput()" color="warning" expand="full">
+    Data Input
+  </ion-button>
+  <p>Tu nombre es: <strong>{{nombre || "No asignado aún"}}</strong></p>
+
+
+</ion-content>

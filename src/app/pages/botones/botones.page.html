@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Botones</ion-title>
+    <ion-buttons slot="end">
+      <ion-button color="secondary">
+        <ion-icon name="heart"></ion-icon>
+      </ion-button>
+
+      <ion-button color="secondary">
+        <ion-icon name="star"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- Botones normales -->
+
+  <ion-button size="small" expand="full">Small</ion-button>
+  <ion-button size="default" expand="full">Default</ion-button>
+  <ion-button size="large" expand="full">Large </ion-button>
+  <ion-button size="small">Small</ion-button>
+  <ion-button size="default" >Default</ion-button>
+  <ion-button size="large">Large </ion-button>
+  
+  <!-- anchor -->
+  
+  <ion-button size="large" expand="full" color="danger" routerLink="/alert">Ir a Alert </ion-button>
+
+  <ion-row class="ion-justify-content-center">
+    <!-- <ion-col size="8">
+      <ion-button size="large" expand="full" color="danger" routerLink="/alert">Ir a Alert </ion-button>
+    </ion-col> -->
+    <ion-col size="4">
+      <ion-button size="large" expand="full" color="success" routerLink="/inicio">Ir a Inicio </ion-button>
+    </ion-col>
+  </ion-row>
+</ion-content>
