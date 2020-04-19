@@ -12,10 +12,13 @@ export class InicioPage implements OnInit {
 
   constructor() {
     this.paginas = [
-      new Pagina ('alert', '/alert'),
-      new Pagina ('action-sheet', '/action-sheet'),
-      new Pagina ('Avatar', '/avatar'),
-      new Pagina ('Botones', '/botones')
+      new Pagina ('alerts', '/alert'),
+      new Pagina ('action-sheets', '/action-sheet'),
+      new Pagina ('Avatars', '/avatar'),
+      new Pagina ('Botones', '/botones'),
+      new Pagina ('cards', '/card'),
+      new Pagina ('Checkbox', '/checkbox'),
+      new Pagina ('DateTime', '/date-time')
     ];
   }
 
