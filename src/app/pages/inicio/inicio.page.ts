@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Pagina } from '../../models/paginas';
+import { MenuController } from '@ionic/angular';
 
 @Component({
   selector: 'app-inicio',
@@ -10,7 +11,7 @@ export class InicioPage implements OnInit {
 
   public paginas: Array<Pagina>
 
-  constructor() {
+  constructor(private menuCtrl: MenuController) {
     this.paginas = [
       new Pagina ('alerts', '/alert'),
       new Pagina ('action-sheets', '/action-sheet'),
@@ -24,12 +25,17 @@ export class InicioPage implements OnInit {
       new Pagina ('Infinite Scroll', '/infinite-scroll'),
       new Pagina ('Input Login', '/input'),
       new Pagina ('List and Option List', '/list'),
-      new Pagina ('List Reorder', '/list-reorder')
+      new Pagina ('List Reorder', '/list-reorder'),
+      new Pagina ('Loading', '/loading')
     ];
   }
 
   ngOnInit() {
     console.log(this.paginas);
-  }
 
+  }
+  
+  toggleMenu() {
+    this.menuCtrl.toggle();
+  }
 }
