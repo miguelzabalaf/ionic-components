@@ -1,0 +1,65 @@
+<app-header [titulo]="titulo"></app-header>
+
+<ion-content fullscreen>
+
+  <ion-grid fixed>
+    <ion-row>
+      <ion-col>3</ion-col>
+      <ion-col>3</ion-col>
+      <ion-col>3</ion-col>
+      <ion-col>3</ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>6</ion-col>
+      <ion-col>6</ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>12</ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>1</ion-col>
+      <ion-col>2</ion-col>
+      <ion-col>3</ion-col>
+      <ion-col>4</ion-col>
+      <ion-col>5</ion-col>
+      <ion-col>6</ion-col>
+      <ion-col>7</ion-col>
+      <ion-col>8</ion-col>
+      <ion-col>9</ion-col>
+      <ion-col>10</ion-col>
+      <ion-col>11</ion-col>
+      <ion-col>12</ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="8">8</ion-col>
+      <ion-col size="4">4</ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="1">1</ion-col>
+      <ion-col size="11">11</ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col  size="12" size-lg="3" size-md="4" size-sm="6" size-xs="12"
+                *ngFor="let c of [1,1,1,1,1,1,1,1,1,1,1]">
+        <ion-card color="primary">
+          <ion-card-header>
+            <ion-card-title>
+              Este es el título
+            </ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit dolore veritatis recusandae animi! Quidem, nesciunt.
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+
+</ion-content>

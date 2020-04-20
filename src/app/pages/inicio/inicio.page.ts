@@ -18,7 +18,12 @@ export class InicioPage implements OnInit {
       new Pagina ('Botones', '/botones'),
       new Pagina ('cards', '/card'),
       new Pagina ('Checkbox', '/checkbox'),
-      new Pagina ('DateTime', '/date-time')
+      new Pagina ('DateTime', '/date-time'),
+      new Pagina ('Fab fixed', '/fab'),
+      new Pagina ('Grid', '/grid'),
+      new Pagina ('Infinite Scroll', '/infinite-scroll'),
+      new Pagina ('Input Login', '/input'),
+      new Pagina ('List and Option List', '/list')
     ];
   }
 
