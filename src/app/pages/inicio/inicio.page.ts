@@ -23,7 +23,8 @@ export class InicioPage implements OnInit {
       new Pagina ('Grid', '/grid'),
       new Pagina ('Infinite Scroll', '/infinite-scroll'),
       new Pagina ('Input Login', '/input'),
-      new Pagina ('List and Option List', '/list')
+      new Pagina ('List and Option List', '/list'),
+      new Pagina ('List Reorder', '/list-reorder')
     ];
   }
 
