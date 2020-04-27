@@ -12,7 +12,7 @@ export class ListPage implements OnInit {
 
   @ViewChild('lista' , {static: false}) lista: IonList;
 
-  public titulo: string = "List and Option Sliding";
+  public titulo = 'List and Option Sliding';
 
   public users: Observable<any>;
 
@@ -26,7 +26,6 @@ export class ListPage implements OnInit {
     console.log( `Se ha asignado de favorito a ${user.name}`);
     this.lista.closeSlidingItems();
   }
-  
   borrar( user ) {
     console.log(`Se ha "borrado" a ${user.name}`);
     this.lista.closeSlidingItems();

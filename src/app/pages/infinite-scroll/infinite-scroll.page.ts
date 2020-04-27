@@ -8,21 +8,21 @@ import { IonInfiniteScroll } from '@ionic/angular';
 })
 export class InfiniteScrollPage implements OnInit {
 
-  public titulo: string = "Infinity Scroll"
+  public titulo = 'Infinity Scroll';
 
   public array: any = [];
-  public i: number = 0;
+  public i = 0;
 
   constructor() { }
 
   ngOnInit() {
     for (let i = 0; i < 50; i++) {
-      this.array.push(i)
+      this.array.push(i);
     }
   }
 
   loadData(event) {
-    console.log("Cargando próximos items");
+    console.log('Cargando próximos items');
 
     setTimeout(()=> {
 
