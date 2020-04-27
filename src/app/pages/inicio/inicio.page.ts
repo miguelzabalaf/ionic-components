@@ -13,8 +13,8 @@ export class InicioPage implements OnInit {
 
   constructor(private menuCtrl: MenuController) {
     this.paginas = [
-      new Pagina ('alerts', '/alert'),
-      new Pagina ('action-sheets', '/action-sheet'),
+      new Pagina ('Alerts', '/alert'),
+      new Pagina ('Action-sheets', '/action-sheet'),
       new Pagina ('Avatars', '/avatar'),
       new Pagina ('Botones', '/botones'),
       new Pagina ('cards', '/card'),
@@ -26,7 +26,8 @@ export class InicioPage implements OnInit {
       new Pagina ('Input Login', '/input'),
       new Pagina ('List and Option List', '/list'),
       new Pagina ('List Reorder', '/list-reorder'),
-      new Pagina ('Loading', '/loading')
+      new Pagina ('Loading', '/loading'),
+      new Pagina ('Modal', '/modal'),
     ];
   }
 
