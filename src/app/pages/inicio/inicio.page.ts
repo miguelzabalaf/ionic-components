@@ -28,6 +28,7 @@ export class InicioPage implements OnInit {
       new Pagina ('List Reorder', '/list-reorder'),
       new Pagina ('Loading', '/loading'),
       new Pagina ('Modal', '/modal'),
+      new Pagina ('Popover', '/popover')
     ];
   }
 
